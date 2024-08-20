@@ -40,4 +40,16 @@ public class LoginSteps {
         // assertTrue(driver.getCurrentUrl().equals("http://example.com/home"));
         System.out.println("User is navigated to the home page");
     }
+
+    @Given("User is at the login page of the application")
+    public void userIsAtTheLoginPageOfTheApplication() {
+    }
+
+    @When("User logs in with following username and password")
+    public void userLogsInWithFollowingUsernameAndPassword() {
+    }
+
+    @Then("User should be able to login with usename and password")
+    public void userShouldBeAbleToLoginWithUsenameAndPassword() {
+    }
 }
