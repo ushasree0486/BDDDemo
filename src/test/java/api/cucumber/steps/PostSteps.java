@@ -6,35 +6,26 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class PostSteps {
-   /* @Given("User should be logged in and should be present on his wall")
-    public void user_should_be_logged_in_and_should_be_present_on_his_wall() {
-        // Code to ensure user is logged in and on their wall
-
-        //webDriver =  webDriver.getDriver()
-        //
-        System.out.println("User is logged in and on their wall");
+    @When("I type the message as {string} in the text box")
+    public void iTypeTheMessageAsInTheTextBox(String text) {
+        System.out.println(text);
     }
 
-    @When("I type the message in the box")
-    public void i_type_the_message_in_the_box() {
-        // Code to type a message into a text box
-        System.out.println("Message typed in the box");
+    @Given("User should be logged in and should be present on his wall")
+    public void userShouldBeLoggedInAndShouldBePresentOnHisWall() {
     }
 
-    @When("Click on post button")
-    public void click_on_post_button() {
-        // Code to click the post button
-        System.out.println("Post button clicked");
+    @And("Click on post button")
+    public void clickOnPostButton() {
     }
 
     @Then("the message should get posted")
-    public void the_message_should_get_posted() {
-        // Code to verify the message has been posted
-        System.out.println("Message posted successfully");
+    public void theMessageShouldGetPosted() {
     }
 
-    @When("User supply the youtube link in the text box")
-    public void userSupplyTheYoutubeLinkInTheTextBox() {
+    @When("User supply the youtube link as {string} in the text box")
+    public void userSupplyTheYoutubeLinkAsInTheTextBox(String text) {
+        System.out.println(text);
     }
 
     @Then("Then video should get posted on the user wall")
@@ -45,11 +36,7 @@ public class PostSteps {
     public void theVideoShouldHaveProperThumbnail() {
     }
 
-    @When("I type the message as {string} in the text box")
-    public void iTypeTheMessageAsInTheTextBox(String arg0) {
+    @When("User supply the youtube link in the text box")
+    public void userSupplyTheYoutubeLinkInTheTextBox() {
     }
-
-    @When("User supply the youtube link as {string} in the text box")
-    public void userSupplyTheYoutubeLinkAsInTheTextBox(String arg0) {
-    }*/
 }
