@@ -39,4 +39,8 @@ public class PostSteps {
     @When("User supply the youtube link in the text box")
     public void userSupplyTheYoutubeLinkInTheTextBox() {
     }
+
+    @When("I type the message in the box")
+    public void iTypeTheMessageInTheBox() {
+    }
 }
