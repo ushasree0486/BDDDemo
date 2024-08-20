@@ -4,7 +4,7 @@ Feature: Login action
 
     Given Use is on Home page
     When User Navigate to Login Page
-    And User enters "<username>" and "<password>"
+    And User enters "<username>" and "<password>":
     Then Message displayed Login Successfully
     Examples:
       | username               | password     |
