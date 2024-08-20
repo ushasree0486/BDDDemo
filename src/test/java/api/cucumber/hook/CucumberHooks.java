@@ -6,6 +6,7 @@ import org.junit.Before;
 public class CucumberHooks {
     @Before
     public void setUp(){
+
         System.out.println("---Before hook---");
     }
     @After
