@@ -49,7 +49,7 @@ public class LoginSteps {
     public void userLogsInWithFollowingUsernameAndPassword() {
     }
 
-    @Then("User should be able to login with usename and password")
-    public void userShouldBeAbleToLoginWithUsenameAndPassword() {
+    @Then("User should be able to login with username and password")
+    public void userShouldBeAbleToLoginWithUsernameAndPassword() {
     }
 }

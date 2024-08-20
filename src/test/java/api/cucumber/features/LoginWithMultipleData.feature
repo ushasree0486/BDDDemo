@@ -7,4 +7,4 @@ Feature: User login feature
       | user1 | pass1 |
       | user2 | pass2 |
       | user3 | pass3 |
-    Then User should be able to login with usename and password
+    Then User should be able to login with username and password
