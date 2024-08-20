@@ -5,7 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LoginStepDefinitionforscenarioWithExample {
+public class LoginStepDefinitionforScenarioWithExamples {
+
     @Given("Use is on Home page")
     public void useIsOnHomePage() {
     }
