@@ -37,7 +37,7 @@ public class LoginDemoSteps_Pom {
     }
 
     @When("user enters {string} and {string}")
-    public void user_Enters_Username_and_password(String username, String password)throws Throwable {
+    public void user_enters(String username, String password)throws Throwable {
         login = new LoginPage(webDriver);
         login.enterUsername(username);
         login.enterPassword(password);
