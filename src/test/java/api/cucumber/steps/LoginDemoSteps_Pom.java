@@ -33,7 +33,7 @@ public class LoginDemoSteps_Pom {
     }
     @And("user is on login page")
     public void user_Is_On_Login_Page() {
-        webDriver.navigate().to("https://www.saucedemo.com");
+        webDriver.navigate().to("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
     }
 
     @When("user enters {string} and {string}")
