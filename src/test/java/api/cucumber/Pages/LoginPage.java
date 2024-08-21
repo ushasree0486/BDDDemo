@@ -12,7 +12,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver webDriver){
         this.webDriver=webDriver;
-        if(!webDriver.getTitle().equals("TestProject Demo")){
+        if(!webDriver.getTitle().equals("saucedemo")){
             throw new IllegalStateException("This is not Login Page.The current page is "+webDriver.getCurrentUrl());
         }
     }
