@@ -6,11 +6,17 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
 
 public class CucumberHooks {
-    @Before
+    @Before(order=-3)
     public void setUp(){
 
         System.out.println("---Before hook---");
     }
+    @Before(order=1)
+    public void setUp1(){
+
+        System.out.println("---Before hook---");
+    }
+
     @After
     public void tearDown(){
         System.out.println("---After hook---");
