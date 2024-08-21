@@ -1,7 +1,9 @@
 package api.cucumber.hook;
 
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 
 public class CucumberHooks {
     @Before
@@ -12,5 +14,15 @@ public class CucumberHooks {
     @After
     public void tearDown(){
         System.out.println("---After hook---");
+    }
+
+    @BeforeStep
+    public void setSetUp(){
+        System.out.println("----BeforeStep hook----");
+    }
+
+    @AfterStep
+    public void tearDownStep(){
+        System.out.println("----AfterStep hook----");
     }
 }
