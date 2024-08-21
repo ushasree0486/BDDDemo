@@ -34,8 +34,8 @@ public class LoginPage {
     public boolean checkLogOutIsDisplayed(){
         return webDriver.findElement(btn_logout).isDisplayed();
     }
-    public void loginValidUser(String usename,String password){
-        webDriver.findElement(txt_username).sendKeys(usename);
+    public void loginValidUser(String username,String password){
+        webDriver.findElement(txt_username).sendKeys(username);
         webDriver.findElement(txt_username).sendKeys(password);
         webDriver.findElement(btn_login).click();
     }
