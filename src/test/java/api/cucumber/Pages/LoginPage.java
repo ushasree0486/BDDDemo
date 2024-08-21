@@ -26,13 +26,13 @@ public class LoginPage {
         webDriver.findElement(txt_username).sendKeys(username);
     }
     public void enterPassword(String password){
-        webDriver.findElement(txt_username).sendKeys(password);
+        webDriver.findElement(txt_password).sendKeys(password);
     }
     public void clickLogin(){
         webDriver.findElement(btn_login).click();
     }
     public boolean checkLogOutIsDisplayed(){
-        return webDriver.findElement(btn_login).isDisplayed();
+        return webDriver.findElement(btn_logout).isDisplayed();
     }
     public void loginValidUser(String usename,String password){
         webDriver.findElement(txt_username).sendKeys(usename);
