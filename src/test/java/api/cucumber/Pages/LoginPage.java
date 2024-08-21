@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
     private WebDriver webDriver;
-    private By txt_username=By.id("name");
+    private By txt_username=By.id("user-name");
     private By txt_password=By.id("password");
-    private By btn_login=By.id("login");
-    private By ltn_logout=By.id("logout");
+    private By btn_login=By.id("login-button");
+    private By ltn_logout=By.id("logout_sidebar_link");
 
     public LoginPage(WebDriver webDriver){
         this.webDriver=webDriver;

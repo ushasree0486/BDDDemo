@@ -7,6 +7,6 @@ Feature: Test login functionality
     And user clicks on login
     Then user is navigated to the home page
     Examples:
-      | username | password |
-      | kundan   | 12345    |
-      | varsha   | 12345    |
+      | username      | password     |
+      | standard_user | secret_sauce |
+      | problem_user  | secret_sauce |
