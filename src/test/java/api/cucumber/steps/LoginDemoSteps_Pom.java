@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginDemoSteps_Pom {
@@ -26,8 +27,8 @@ public class LoginDemoSteps_Pom {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         webDriver = new ChromeDriver(options);
-        webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        webDriver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
         webDriver.manage().window().maximize();
     }
     @And("user is on login page")
