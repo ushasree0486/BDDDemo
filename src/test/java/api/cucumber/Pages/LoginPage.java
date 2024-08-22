@@ -12,13 +12,13 @@ public class LoginPage {
  */
     private By txt_username = By.name("email");
     private By txt_password = By.name("password");
-    private By btn_login = By.xpath("//input[@type='submit']");
+    private By btn_login = By.xpath("//input[@class='btn btn-primary']");
     //private By forgottenPasswordLinkLocator = By.linkText("Forgotten Password");
     private By btn_logout = By.linkText("Logout");
 
     public LoginPage(WebDriver webDriver) {
         this.webDriver = webDriver;
-        if (!webDriver.getTitle().equals("Naveen automation labs")) {
+        if (!webDriver.getTitle().equals("Account Login")) {
             throw new IllegalStateException("This is not Login Page.The current page is " + webDriver.getCurrentUrl());
         }
     }
