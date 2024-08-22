@@ -7,6 +7,6 @@ Feature: Test login functionality
     And user clicks on login
     Then user is navigated to the home page
     Examples:
-      | username         | password |
-      | kundan@gmail.com | 12345    |
-      | varsha@gmail.com | 12345    |
+      | username          | password        |
+      | invalid@email.com | invalidPassword |
+      | abcccc            | validPassword   |
