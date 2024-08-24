@@ -52,7 +52,8 @@ public class LoginDemoSteps_PF {
 
     @Then("user is navigated to the home page")
     public void user_Is_Navigated_To_The_Home_Page() throws InterruptedException {
-        //Assert.assertTrue(login.checkLogOutIsDisplayed());
+        home=new HomePage_PF(webDriver);
+        home.checkLogOutIsDisplayed();
         Thread.sleep(2000);
         webDriver.close();
     }
