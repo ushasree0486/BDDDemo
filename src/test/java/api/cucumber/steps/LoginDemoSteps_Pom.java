@@ -19,7 +19,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginDemoSteps_Pom {
-    WebDriver webDriver = null;
+   /* WebDriver webDriver = null;
      LoginPage login;
 
     @Given("browser is open")
@@ -58,4 +58,4 @@ public class LoginDemoSteps_Pom {
         Thread.sleep(2000);
         webDriver.close();
     }
-}
+*/}
