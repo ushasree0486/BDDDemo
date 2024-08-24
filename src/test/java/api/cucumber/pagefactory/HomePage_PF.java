@@ -16,7 +16,7 @@ public class HomePage_PF {
         PageFactory.initElements(webDriver, this);
     }
 
-    public void checkLogOutIsDisplayed() {
-        btn_logout.isDisplayed();
+    public boolean checkLogOutIsDisplayed() {
+       return btn_logout.isDisplayed();
     }
 }
