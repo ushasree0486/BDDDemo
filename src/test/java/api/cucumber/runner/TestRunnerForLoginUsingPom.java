@@ -4,9 +4,18 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-public class TestRunnerForLoginUsingPom {
-    @RunWith(Cucumber.class)
+@RunWith(Cucumber.class)
 
-    CucumberOptions(features=)
+@CucumberOptions(features = {"src/test/java/api/cucumber/features/login_demo.feature"},
+        glue = {"api/cucumber/steps"},
+        monochrome = true,
+        plugin={"pretty","html:target/HtmlReports"
+        ,"pretty","json:target/report.json"
+        ,"pretty","junit:target/report.xml"}
+
+)
+
+
+public class TestRunnerForLoginUsingPom {
 
 }
