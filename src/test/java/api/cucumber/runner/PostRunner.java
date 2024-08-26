@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = {"src/test/java/api/cucumber/features/login_demo.feature"},
+@CucumberOptions(features = {"src/test/resources/features/login_demo.feature"},
         glue = {"api/cucumber/steps"}
         , dryRun = false)
 /*
