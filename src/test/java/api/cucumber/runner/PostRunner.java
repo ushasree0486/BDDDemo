@@ -5,10 +5,11 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-
 @CucumberOptions(features = {"src/test/resources/features/login_demo.feature"},
-        glue = {"api/cucumber/steps"}
-        , dryRun = false)
+           glue = {"api/cucumber/steps"},
+           monochrome = true
+)
+
 /*
 @CucumberOptions(features = {"src/test/java/api/cucumber/features/login_demo.feature"},
         glue = {"api/cucumber/steps", "api/cucumber/hook"}
@@ -17,7 +18,6 @@ import io.cucumber.junit.Cucumber;
         ,plugin={"pretty","junit:target/report.xml"},tags="@SmokeTest"
 )
 */
-
 public class PostRunner {
 
 }

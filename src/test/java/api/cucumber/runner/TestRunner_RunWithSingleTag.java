@@ -13,9 +13,8 @@ import io.cucumber.junit.Cucumber;
         tags ="(@smoke or @regression) and @important"
         //tags =" @regression and not @smoke"
         //tags ="(@smoke or @regression) and not @important"
-
-
 )
 public class TestRunner_RunWithSingleTag {
+
 
 }
