@@ -9,8 +9,8 @@ import io.cucumber.junit.Cucumber;
         glue = {"api/cucumber/steps"},
         //tags = "@smoke,@regression" //deprecate
         //tags = "@important or @regression"
-        //tags = "@smoke and @regression"
-        tags ="(@smoke or @regression) and @important"
+        tags = "@smoke and @regression"
+       // tags ="(@smoke or @regression) and @important"
         //tags =" @regression and not @smoke"
         //tags ="(@smoke or @regression) and not @important"
 )
