@@ -16,6 +16,7 @@ public class LoginSteps {
         // Code to navigate to the login page
         // For example: driver.get("http://example.com/login");
         System.out.println("user_is_on_login_page");
+        System.out.println("today is teachers day");
     }
 
     @When("user enters username and password")
