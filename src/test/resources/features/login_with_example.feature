@@ -2,7 +2,7 @@ Feature: Login action
 
   Scenario Outline: Successful Login with Valid Credentials
 
-    Given Use is on Home page
+    Given User is on Home page
     When User Navigate to Login Page
     And User enters "<username>" and "<password>"
     Then Message displayed Login Successfully

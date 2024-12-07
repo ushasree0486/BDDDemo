@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +14,7 @@ public class LoginStepDefinitionforScenarioWithExamples {
     private WebDriver webDriver;
 
 
-    @Given("Use is on Home page")
+    @Given("User is on Home page")
     public void useIsOnHomePage() {
         WebDriverManager.chromedriver().setup();
         //WebDriver driver = new FirefoxDriver();
