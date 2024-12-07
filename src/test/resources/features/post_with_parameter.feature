@@ -3,7 +3,7 @@ Feature: Post feature of facebook
 
   Background: this is for common step
     Given User should be logged in and should be present on his wall
-
+@SmokeTest
   Scenario:Post a message on user wall
     When I type the message as "My Post" in the text box
     And Click on post button

@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features = {"src/test/resources/features"},
-        glue = {"api/cucumber/steps","api.cucumber.hook"},
+        glue = {"api/cucumber/steps"},
         monochrome = true,
         plugin={"pretty","html:target/HtmlReports"
         ,"pretty","json:target/report.json"
-        ,"pretty","junit:target/report.xml"}
+        ,"pretty","junit:target/report.xml",},tags = "@SmokeTest"
 
 )
 
