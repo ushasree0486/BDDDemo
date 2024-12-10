@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         plugin={"pretty","html:target/HtmlReports"
         ,"pretty","json:target/report.json"
-        ,"pretty","junit:target/report.xml",},tags = "@SmokeTest"
+        ,"pretty","junit:target/report.xml"}
 
 )
 

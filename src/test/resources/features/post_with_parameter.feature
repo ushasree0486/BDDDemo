@@ -1,7 +1,7 @@
 Feature: Post feature of facebook
   This will test the post functionality at the user wall
 
-  Background: this is for common step
+    Background: this is for common step
     Given User should be logged in and should be present on his wall
 @SmokeTest
   Scenario:Post a message on user wall

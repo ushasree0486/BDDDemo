@@ -19,43 +19,52 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginDemoSteps_Pom {
-   /* WebDriver webDriver = null;
+   WebDriver webdriver = null;
      LoginPage login;
 
     @Given("browser is open")
-    public void browser_Is_Open() {
-        System.out.println("===I am inside browser_is_open===");
+    public void browse_Is_Open()throws Throwable {
+        //System.out.println("===I am inside browser_is_open===");
+        System.out.println("browse_Is_Open");
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        webDriver = new ChromeDriver(options);
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-        webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
-        webDriver.manage().window().maximize();
+        webdriver = new ChromeDriver(options);
+        webdriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+        webdriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
+        webdriver.manage().window().maximize();
+
     }
 
     @And("user is on login page")
-    public void user_Is_On_Login_Page() {
-        webDriver.navigate().to("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+    public void user_Is_On_Login_Page()throws Throwable {
+        System.out.println("user is on login page");
+        webdriver.navigate().to("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+
     }
+
 
     @When("user enters {string} and {string}")
     public void user_enters(String username, String password) throws Throwable {
-         login = new LoginPage(webDriver);
+         login = new LoginPage(webdriver);
          login.enterUsername(username);
         login.enterPassword(password);
         Thread.sleep(2000);
+
+
     }
 
     @And("user clicks on login")
-    public void user_Clicks_On_Login() {
+    public void user_Clicks_On_Login()throws Throwable {
         login.clickLogin();
+
     }
 
     @Then("user is navigated to the home page")
-    public void user_Is_Navigated_To_The_Home_Page() throws InterruptedException {
+    public void user_Is_Navigated_To_The_Home_Page() throws Throwable {
         Assert.assertTrue(login.checkLogOutIsDisplayed());
         Thread.sleep(2000);
-        webDriver.close();
+        webdriver.close();
+
     }
-*/}
+}

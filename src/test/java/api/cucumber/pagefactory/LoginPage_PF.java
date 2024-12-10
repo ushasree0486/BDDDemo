@@ -35,7 +35,7 @@ public class LoginPage_PF {
         PageFactory.initElements(webDriver, this);
         //using page factory we can locate the webelement using @FindBy
         //using page factory we can seperate objects and test cases.to create java class for every html page.
-        // and we can corresponding write testcases
+        // and we can write corresponding testcases
         // the advantage if any locator changes u have to go and change the specific java page and your framework
         //is maintainable very easy to be and it is extensible very easy
 

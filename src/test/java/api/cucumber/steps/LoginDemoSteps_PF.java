@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 
 public class LoginDemoSteps_PF {
-    WebDriver webDriver = null;
+   /* WebDriver webDriver = null;
     LoginPage_PF login;
     HomePage_PF home;
 
@@ -57,7 +57,7 @@ public class LoginDemoSteps_PF {
        // Assert.assertTrue(home.checkLogOutIsDisplayed());
         Thread.sleep(2000);
         webDriver.close();
-    }
+    }*/
 }
 
 
